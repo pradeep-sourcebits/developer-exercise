@@ -1,7 +1,7 @@
 # ASSUMPTIONS
 # 
 # Not using any Gem, but a direct HTTP request to access YouTube provided API.
-# The value of the KEYWORD string to search through YouTube is given as static as 'football'
+# The value of the KEYWORD string to search through YouTube is given static as 'football'
 require "net/https"
 require "uri"
 require 'json'
@@ -53,7 +53,7 @@ end
 # Example to check with the keyword provided as a constant inside YouTube class
 you_tube = YouTube.new YouTube::KEYWORD
 
-# Displaying the result (maximum of 3 urls an an array).
+# Displaying the result (maximum of 3 urls as an array).
 puts you_tube.search.inspect
 
 require 'test/unit'
